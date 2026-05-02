@@ -25,6 +25,8 @@ const links = {
   recycling: 'https://www.youtube.com/watch?v=1OFQtQJqzdA',
 };
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const navItems = [
   { id: 'about', nav: 'About', number: '01' },
   { id: 'work-education', nav: 'Work and Education', number: '02' },
@@ -229,7 +231,7 @@ function Sidebar({ activeId, onNavigate }) {
         </a>
 
         <div className="identity-lockup">
-          <img className="headshot" src="/assets/vivek-headshot.png" alt="Vivek Koul" />
+          <img className="headshot" src={publicAsset('assets/vivek-headshot.png')} alt="Vivek Koul" />
           <div>
             <h1 className="font-display text-4xl font-black leading-none text-white sm:text-5xl">Vivek Koul</h1>
             <div className="mt-4 space-y-2 text-sm leading-6 text-white/70">
@@ -305,7 +307,7 @@ function AboutSection() {
       <div className="mt-8 overflow-hidden border border-white/10 bg-white/[0.035]">
         <img
           className="h-56 w-full object-cover object-center opacity-[0.85] sm:h-72"
-          src="/assets/vivek-signal-map.png"
+          src={publicAsset('assets/vivek-signal-map.png')}
           alt="Abstract azure systems map representing cybersecurity, sports vision, maritime intelligence, and recycling AI."
         />
       </div>
