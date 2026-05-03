@@ -54,7 +54,7 @@ const workEducation = [
     accent: 'text-signal',
     description:
       'Studying mathematics while building software that relies on structured thinking, fast iteration, and clear communication across technical and non-technical contexts.',
-    details: ['Mathematical problem solving', 'Technical communication', 'Product-minded engineering', 'Startup execution'],
+    details: ['Mathematical thinking', 'Programming fundamentals', 'Problem solving', 'Analytical reasoning'],
   },
 ];
 
